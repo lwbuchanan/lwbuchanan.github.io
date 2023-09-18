@@ -7,6 +7,17 @@
     --bblue: #83a598;
 }
 
+@font-face {
+    font-family: 'Fira Code';
+    src: url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+
 #avatar {
     height: 15em;
 }
@@ -18,7 +29,17 @@
 body {
     background-color: var(--bg);
     color: var(--fg);
-    font-family: monospace;
+    font-family: 'Fira Code', monospace;
+}
+
+main {
+    max-width: 95vw;
+    margin: auto;
+    padding: 2em 0;
+}
+
+h1 {
+    margin: 0;
 }
 
 nav {
@@ -30,8 +51,30 @@ nav {
     box-shadow: 0 3px 5px black;
 }
 
+nav div {
+    font-size: 1.25em;
+    margin-right: 10px;
+    color: var(--blue);
+}
+
+.cursor {
+    color: var(--fg1);
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
+
+}
+.cursor::after {
+    content: "";
+    width: 2px;
+    height: .85em;
+    background: var(--fg1);
+    display: inline-block;
+    animation: cursor-blink 1.5s steps(2) infinite;
+}
+
 .nav-button {
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-decoration: none;
     color: var(--fg1);
     transition: .1s;
