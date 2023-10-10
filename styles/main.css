@@ -92,12 +92,27 @@ nav div {
     transition: .15s;
 }
 
+#resumeDownloadBtn {
+    font-size: 0.6em;
+    margin-left: 2em;
+    background-color: var(--bg0_h);
+    border: none;
+    border-radius: 20px;
+    color: var(--fg);
+    padding: .3em .7em;
+    box-shadow: 0 1px 5px black;
+    &:hover {
+        color: var(--bblue);
+        box-shadow: 0 3px 5px black;
+        transition: .35s;
+    }
+}
+
 pre {
     font-size: 0.7em;
     color: var(--fg1);
     margin: 0;
 }
-
 
 #about_content_wrapper {
     margin-top: 2em;
