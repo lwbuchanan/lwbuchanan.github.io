@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body id="portfolio">
     <nav>
@@ -21,34 +25,29 @@
         <ul id="portfolio-items">
             <li>
                 <h2><a href="https://github.com/rhit-csse220/csse220-winter-2022-23-final-project-w23_a_4505">Java Arcade Game</a></h2>
-                <img src="images/joust.png" alt="Image of joust game">
-                <p>
-                    For CSSE220, I created an arcade game inspired by the game <em>Joust</em> along with two other classmates, Ethan Pabbathi and Temi Akinselure. The game was created entirely using Java, using the AWT/Swing library for animations and rendering of game objects. The game features player collisions with terrain objects, several hazards, and enemies that automatically follow the player.
-                </p>
+                <div class="portfolio-wrapper">
+                    <img src="images/joust.png" alt="Image of joust game">
+                    <p>
+                        For CSSE220, I created an arcade game inspired by the game <em>Joust</em> along with two other classmates, Ethan Pabbathi and Temi Akinselure. The game was created entirely using Java, using the AWT/Swing library for animations and rendering of game objects. The game features player collisions with terrain objects, several hazards, and enemies that automatically follow the player.
+                    </p>
+                </div>
             </li>
             <li>
-                <h2><a href="">Project 2</a></h2>
-                <img src="images/portfolio_item2" alt="Image of project 2">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores, blanditiis quasi nulla rem quas corrupti aut quibusdam voluptatibus porro ut quisquam illum dolore iure repudiandae quam maiores. Eum, beatae.
-                    Fuga dolore magni temporibus veritatis aperiam? Vero quaerat quis voluptatibus ex ad nam ducimus eius blanditiis cupiditate fugiat reprehenderit vel, at ea in harum laboriosam doloribus saepe sequi inventore neque.
-                </p>
-            </li>
-            <li>
-                <h2><a href="">Project 3</a></h2>
-                <img src="images/portfolio_item3" alt="Image of project 3">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, asperiores, blanditiis quasi nulla rem quas corrupti aut quibusdam voluptatibus porro ut quisquam illum dolore iure repudiandae quam maiores. Eum, beatae.
-                    Fuga dolore magni temporibus veritatis aperiam? Vero quaerat quis voluptatibus ex ad nam ducimus eius blanditiis cupiditate fugiat reprehenderit vel, at ea in harum laboriosam doloribus saepe sequi inventore neque.
-                </p>
+                <h2><a href="">Software Renderer (WIP)</a></h2>
+                <div class="portfolio-wrapper">
+                    <img src="images/wip.png" alt="Work in progress">
+                    <p>
+                        Currently, in my free time, I am working on a software renderer that will be able to rasterize 3d graphics to an image file. I am building this in C++ from scratch, with almost no outside libraries such as OpenGl or even SDL. My hope is that by the end of this project, I will have a firm understanding of the process of rasterization, and will be comfortable enough to progress into learning more advanced computer graphics programming.
+                    </p>
+                </div>
             </li>
         </ul>
     </main>
-    <hr>
+    <hr class="center-diamond">
     <footer><ul>
-        <li><a href="mailto:buchanlw@rose-hulman.edu">buchanlw@rose-hulman.edu</a></li>
-        <li><a href="https://github.com/lwbuchanan">github.com/lwbuchanan</a></li>
+        <li><i class="fa fa-solid fa-envelope"></i><a href="mailto:buchanlw@rose-hulman.edu">buchanlw@rose-hulman.edu</a></li>
+        <li><i class="fa fa-brands fa-github"></i><a href="https://github.com/lwbuchanan">github.com/lwbuchanan</a></li>
     </ul></footer>
-    <script src="scripts/main.jss"></script>
+    <!-- <script src="scripts/main.jss"></script> -->
 </body>
 </html>
