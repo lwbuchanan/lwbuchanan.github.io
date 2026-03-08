@@ -1,0 +1,71 @@
+@font-face {
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("fonts/Geist.woff2") format("woff2");
+  font-family: "Geist";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("fonts/Geist-Italic.woff2") format("woff2");
+  font-family: "Geist";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("fonts/GeistMono.woff2") format("woff2");
+  font-family: "Geist Mono";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("fonts/GeistMono-Italic.woff2") format("woff2");
+  font-family: "Geist Mono";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("fonts/Gelasio.woff2") format("woff2");
+  font-family: "Gelasio";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: italic;
+  font-weight: 100 900;
+  src: url("fonts/Gelasio-Italic.woff2") format("woff2");
+  font-family: "Gelasio";
+  font-display: swap;
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 100 900;
+  src: url("fonts/GeistPixel-Square.woff2") format("woff2");
+  font-family: "Geist Pixel";
+  font-display: swap;
+}
+
+body {
+  font-family: "Gelasio", serif
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Geist", sans-serif
+}
+
+code {
+  font-family: "Geist Mono", monospace
+}
+
+nav {
+  font-family: "Geist", sans-serif
+}

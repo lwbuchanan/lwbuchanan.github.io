@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block header %}
+<h1>{{ page.title }}</h1>
+<p class="post-meta">
+    Posted: <time datetime="{{ page.date }}">
+        {{page.date | date(format="%b %e %Y")}}
+    </time>
+    {% if page.updated %}
+    <br>
+    Last updated: <time datetime="{{ page.updated }}">
+    {{page.updated | date(format="%b %e %Y")}}
+    </time>
+    {% endif %}
+    {% if page.authors %}
+    <br>
+    Author: {{page.authors[0]}}
+    {% endif %}
+</p>
+{% endblock header %}
+
+{% block content %}
+
+{% if page.toc and page.extra.add_toc %}
+<h3>Table of contents</h3>
+<ul>
+{% for h1 in page.toc %}
+    <li>
+        <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+        {% if h1.children %}
+            <ul>
+                {% for h2 in h1.children %}
+                    <li>
+                        <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+{% endif %}
+{{ page.content | safe }}
+<br>
+<a href="mailto:blog@lbuch.com?subject=Comment:{{title | replace(from=" ", to="%20")}}">Comment by email</a>
+<br>
+{% if page.taxonomies.Tags %}
+Tags:
+{% for tag in page.taxonomies.Tags %}
+<a href="/tags/{{ tag | slugify }}">+{{ tag }}</a>
+{% endfor %}
+{% endif %}
+{% endblock content %}
+
+{% block footer %}
+{% endblock footer %}

@@ -1,0 +1,157 @@
+@use "fonts";
+
+$bg0: #FFFFFF;
+$bg1: #F8F5F1;
+$bg2: #F2ECE4;
+$bg3: #EAE2D6;
+$fg0: #000000;
+$fg1: #131200;
+$blue: #326273;
+$yellow: #E4B777;
+
+html, body { background: $bg0; }
+
+html { height: 100%; }
+
+body {
+  color: $fg1;
+  font-size: 16px;
+  line-height: 1.4;
+  margin: 0;
+  min-height: 100%;
+  overflow-wrap: break-word;
+}
+
+.post-meta { opacity: 0.7 }
+
+h2, h3, h4, h5, h6 { margin: 2rem 0 1rem 0; }
+
+p {
+  margin: 1rem 0;
+}
+
+li { margin: 0.1rem 0; }
+
+*:target { background: $bg2; }
+
+.w {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+hr {
+  margin: 2rem 0;
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background: #999;
+}
+
+table { width: 100%; }
+
+table, th, td {
+  border: thin solid black;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+.giallo-l {
+    display: inline-block;
+    min-height: 1lh;
+    width: 100%;
+}
+.giallo-ln {
+    display: inline-block;
+    // user-select: none;
+    margin-right: 0.4em;
+    min-width: 3ch;
+    // opacity: 0.8;
+}
+
+code {
+  background: $bg1;
+  padding: 0 0.2rem;
+}
+
+pre code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  border-left: 0.5rem solid $bg3;
+  padding: 1rem;
+}
+
+blockquote {
+  background: $bg1;
+  font-style: italic;
+  border-left: 0.5rem solid $bg3;
+  padding: 1rem;
+  margin: 0;
+
+  p { margin: 0; }
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.footnote-definition {
+  padding: 0 1rem;
+  &:target {
+    background: $bg2;
+    color: #212121;
+  }
+  p {
+    display: inline;
+  }
+}
+
+.post-list {
+  list-style-type: none;
+  padding-left: 1rem;
+  li {
+    span {
+      display: flex;
+      time {
+        margin-left: auto;
+        opacity: 0.7;
+      }
+    }
+    .post-description {
+      margin: 0;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.spread {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footnote-reference a {
+  color: $fg1
+}
+
+a {
+  color: $blue;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  text-align: center;
+  a {
+    color: $fg1;
+    font-weight: 500;
+  }
+}
+
+.tags {
+  text-align: center;
+}

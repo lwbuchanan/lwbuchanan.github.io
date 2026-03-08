@@ -1,0 +1,26 @@
+base_url = "https://www.lbuch.com"
+title = "Luke Buchanan"
+author = "Luke Buchanan"
+description = "My personal website and blog."
+
+default_language = "en"
+compile_sass = true
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+generate_robots_txt = false
+# build_search_index = true
+taxonomies = [
+    { name = "Tags", feed = true },
+]
+
+[markdown.highlighting]
+error_on_missing_language = false
+theme = "rose-pine-dawn"
+[extra]
+copyright = 2026
+favicon = "favicon.ico"
+header_nav = [
+    { name = "Home", url = "/" },
+    { name = "Blog", url = "/blog" },
+    { name = "Projects", url = "/projects" },
+]
