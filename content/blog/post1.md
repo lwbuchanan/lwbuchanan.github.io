@@ -3,7 +3,7 @@ title = "My cool post"
 date = 2026-03-06
 updated = 2026-03-07
 description = "A test post to make sure the website is working this one is very long. Lorem ipsum dolor sit amet"
-authors = ["Luke", "John"]
+draft = true
 
 [taxonomies]
 Tags = ["Programming", "test"]
